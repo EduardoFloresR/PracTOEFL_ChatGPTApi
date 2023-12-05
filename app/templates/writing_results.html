@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>WRITING SKILLS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos_writing.css') }}">
+</head>
+<body>
+    <div class="cabecera">
+        <div class="fondo-cabecera">
+            <h1>Prac-<span>TOEFL®</span></h1>
+            <h2>Writing section</h2>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div class="seccion izquierda">
+            <form action="{{ url_for('main.go_index') }}" method="post">
+                <label for="user_input">Here are your results:</label>
+                <!-- Ajustar el tamaño para aproximadamente 300 palabras -->
+                <textarea id="resultsTextarea" rows="20" cols="100" readonly>{{ results }}</textarea><br>
+                <input type="submit" value="Return">
+            </form>
+        </div>
+
+        <div class="seccion derecha">
+            <button class="boton" id="changeTopicBtn">Try again</button>
+            <script src="{{ url_for('static',filename='js/script_writing.js') }}"></script>
+            <h2>What skills are evaluated in this section?</h2>
+            <h3>1. Content and Relevance</h3>
+            <h3>2. Organization and Structure</h3>
+            <h3>3. Language Use and Vocabulary</h3>
+            <h3>4. Grammar and Mechanics</h3>
+        </div>
+    </div>
+</body>
+</html>
