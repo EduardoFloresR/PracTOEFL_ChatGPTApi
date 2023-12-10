@@ -1,0 +1,28 @@
+<!-- templates/about_us.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}Prac-TOEFL® - Home{% endblock %}
+
+{% block content %}
+    <div class="seccion izquierda">
+        <h3>What is Prac-TOEFL?</h3>
+        <h4>Prac-TOEFL is a project developed by Eduardo Flores for the subject of Selected Programming Topics by the UNAM Faculty of Engineering.</h4>
+        <h4>The web application was made using the Python programming language and the Flask library. It also uses the SQLAlchemy library to manage and register users in a database.</h4>
+        <h4>The analysis of the implemented texts is carried out through the ChatGPT API, which was configured as an English language instructor for TOEFL preparation.</h4>
+        
+        <img src="{{ url_for('static', filename='images/python_logo.png') }}" alt="python_logo">
+        <img src="{{ url_for('static', filename='images/sql_logo.png') }}" alt="sql_logo">
+        <img src="{{ url_for('static', filename='images/chatGPT_logo.png') }}" alt="chatGPT_logo">
+
+        <h4>The images used belong to their authors, I do not own the rights. These were taken from the following pages:</h4>
+        <a href="https://unsplash.com/es" class="boton" target="_blank">unsplash</a>
+        <a href="https://www.flaticon.es/" class="boton" target="_blank">flaticon</a>
+    </div>
+
+    <div class="seccion derecha">
+        <h3>Do you want to know more about this project or collaborate with its development?</h3>
+        <h4>Enter the Github repository by scanning the following code.</h4>
+        <img src="{{ url_for('static', filename='images/qr_github.png') }}" alt="qr_github">
+    </div>
+{% endblock %}

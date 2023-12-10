@@ -1,43 +1,36 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>WRITING SKILLS</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos_writing.css') }}">
-</head>
-<body>
-    <div class="cabecera">
-        <div class="fondo-cabecera">
-            <h1>Let's Prac-<span>TOEFL®</span>!</h1>
-            <h2>Write your essay in the textbox</h2>
-        </div>
+<!-- templates/writing.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}WRITING SKILLS{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+{% endblock %}
+
+{% block content %}
+    <div class="seccion izquierda">
+        <h3>{{ topic }}</h3>
+        <form action="{{ url_for('main.submit_writing_form') }}" method="post">
+            <label for="user_input">Use this textbox to write your answer:</label>
+            <textarea id="user_input" name="user_input" rows="20" cols="100"></textarea><br>
+            <input type="submit" value="Check">
+        </form>
     </div>
 
-    <div class="contenedor">
-        <div class="seccion izquierda">
-            <h3>{{ topic }}</h3>
-            <form action="{{ url_for('main.submit_form') }}" method="post">
-                <label for="user_input">Use this textbox to write your answer:</label>
-                <!-- Ajustar el tamaño para aproximadamente 300 palabras -->
-                <textarea id="user_input" name="user_input" rows="20" cols="100"></textarea><br>
-                <input type="submit" value="Check">
-            </form>
-        </div>
-
-        <div class="seccion derecha">
-            <button class="boton" id="changeTopicBtn">Change topic</button>
-            <script src="{{ url_for('static',filename='js/script_writing.js') }}"></script>
-            <h2>What skills are evaluated in this section?</h2>
-            <h3>1. Content and Relevance</h3>
-            <h3>2. Organization and Structure</h3>
-            <h3>3. Language Use and Vocabulary</h3>
-            <h3>4. Grammar and Mechanics</h3>
-            <h2>Some usefull tips for real exam:</h2>
-            <h3>1. Be aware of time</h3>
-            <h3>2. Use academic vocabulary</h3>
-            <h3>3. Write complex sentences</h3>
-            <h3>4. Do not abuse of pronouns</h3>
-        </div>
+    <div class="seccion derecha">
+        <button class="boton" id="changeTopicBtn">Change topic</button>
+        <script src="{{ url_for('static',filename='js/script_writing.js') }}"></script>
+        <h2>What skills are evaluated in this section?</h2>
+        <h3>1. Content and Relevance</h3>
+        <h3>2. Organization and Structure</h3>
+        <h3>3. Language Use and Vocabulary</h3>
+        <h3>4. Grammar and Mechanics</h3>
+        <h2>Some useful tips for the real exam:</h2>
+        <h3>1. Be aware of time</h3>
+        <h3>2. Use academic vocabulary</h3>
+        <h3>3. Write complex sentences</h3>
+        <h3>4. Do not abuse pronouns</h3>
     </div>
-</body>
-</html>
+{% endblock %}
+

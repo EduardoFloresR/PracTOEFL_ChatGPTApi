@@ -1,0 +1,130 @@
+/* Estilos específicos para el formulario de registro */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #007e83;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #006e83;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 8px;
+    color: #333;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.55;
+    text-align: center;
+}
+
+h1 {
+    color: #f1f1f1;
+    font-family: 'Open Sans', monospace;
+}
+
+h1 span {
+    color: #F56E28; /* Color de TOEFL */
+}
+
+h2 {
+    color: #f1f1f1;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+    text-align: center;
+}
+
+img {
+    max-width: 480px;
+    height: auto;
+}
+
+/* Estilos específicos para la estructura de la página */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fondo-cabecera {
+    background-color: #007e83;
+    padding: 20px;
+}
+
+.seccion {
+    flex: 1;
+    text-align: center;
+    padding: 8px;
+    position: relative;
+}
+
+.seccion.izquierda {
+    flex: 2;
+}
+
+.seccion.derecha {
+    background-color: #F56E28; /* Color de fondo para la sección derecha */
+    color: #f9f9f9; /* Color de texto para resaltar en el fondo oscuro */
+    height: 100%;
+}
+
+.seccion img {
+    width: 100%;
+}
+
+/* Estilos para los Botones */
+.boton {
+    width: 240px; 
+    display: block;
+    margin: 0 auto; /* Centrar horizontalmente */
+    margin-top: 2px;
+    position: relative;
+    padding: 10px 15px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    border: 2px solid #f9f9f9;
+    color: #F56E28;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.boton:hover {
+    background-color: #F56E28;
+    color: #f1f1f1;
+}
+
+/* Estilos para la sección de contenido */
+.seccion-contenido {
+    text-align: center;
+}

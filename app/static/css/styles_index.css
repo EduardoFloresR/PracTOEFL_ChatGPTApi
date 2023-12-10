@@ -5,7 +5,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: #f1f1f1;
     margin: 0;
-    padding: 8px;
+    padding: 0;
     color: #333;
     font-size: 17px;
     font-weight: 300;
@@ -28,12 +28,12 @@ h2 {
 }
 
 h3 {
-    color: #333;
-    font-family: 'Open Sans', sans-serif;
+    text-align: center;
 }
 
 /* Estilos para los Botones */
 .boton {
+    width: 240px; 
     display: block;
     margin: 10px auto 20px; /* Margen superior e inferior, centrado horizontalmente */
     padding: 10px 15px;
@@ -42,29 +42,27 @@ h3 {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    background-color: #007e83;
+    background-color: transparent;
     border: 2px solid #007e83;
-    color: #f1f1f1;
+    color: #007e83;
     transition: background-color 0.3s, color 0.3s;
 }
 
+.boton {
+    display: block;
+    margin-top: 2px;
+    position: relative;
+    background-color: #f9f9f9;
+    border: 2px solid #f9f9f9;
+    color: #F56E28;
+}
+
 .boton:hover {
-    background-color: #006e83;
+    background-color: #F56E28;
     color: #f1f1f1;
 }
 
-/* Estilos para Listas */
-ul {
-    list-style: none;
-    padding: 0;
-}
 
-li {
-    background-color: #f9f9f9;
-    padding: 10px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-}
 
 img {
     max-width: 480px;
@@ -79,20 +77,14 @@ img {
     margin-bottom: 30px;
 }
 
-/* Estilos específicos para la estructura de la página */
-body {
-    margin: 0;
-    padding: 0;
-}
-
 .contenedor {
     display: flex;
-    height: 100vh;
+    height: 50vh;
 }
 
 .fondo-cabecera {
     background-color: #007e83;
-    padding: 10px;
+    padding: 20px;
 }
 
 .seccion {
@@ -106,31 +98,24 @@ body {
     flex: 2;
 }
 
-.seccion.derecha {
-    background-color: #F56E28; /* Color de fondo para la sección derecha */
-    height: 100%;
+h3 {
+    color: #333;
     text-align: center;
 }
 
-/* Estilos para los textos de la sección derecha e izquierda */
-.seccion.izquierda h2,
-.seccion.izquierda h3 {
-    color: #333; /* Color de texto para la sección izquierda */
+h4 {
+    text-align: left;
+    color: #333;
 }
 
-.seccion.derecha h2,
-.seccion.derecha h3 {
-    color: #f1f1f1; /* Color de texto para la sección derecha */
+.seccion.derecha {
+    background-color: #F56E28; 
+    color: #f9f9f9; 
+    height: 100%;
 }
 
 .seccion img {
     width: 100%;
-}
-
-.boton {
-    display: block;
-    margin-top: 2px;
-    position: relative;
 }
 
 /* Estilos para el botón con Pulsación */

@@ -57,8 +57,8 @@ python runApp.py
 
 ## Uso
 
-Abre tu navegador y dirígete a `http://127.0.0.1:8050/` para ver la aplicación.
+Abre tu navegador y dirígete a `http://127.0.0.1:5000/` para ver la aplicación.
 
 ## Contribuir
 
-Para contribuir al proyecto, asegúrate de no subir tu entorno virtual o tu clave API de Mapbox.
+Para contribuir al proyecto, asegúrate de no subir tu entorno virtual o tu clave API de OpenAI.

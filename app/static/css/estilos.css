@@ -4,8 +4,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #f1f1f1;
-    margin: 0;
-    padding: 8px;
     color: #333;
     font-size: 17px;
     font-weight: 300;
@@ -29,12 +27,22 @@ h2 {
 
 h3 {
     text-align: center;
+    color: #333;
+    text-align: center;
+}
+
+h4 {
+    text-align: left;
+    color: #333;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 /* Estilos para los Botones */
 .boton {
+    width: fit-content; 
     display: block;
-    margin: 10px auto 20px; /* Margen superior e inferior, centrado horizontalmente */
+    margin: 0px auto 0px; /* Margen superior e inferior, centrado horizontalmente */
     padding: 10px 15px;
     text-decoration: none;
     border: none;
@@ -54,11 +62,12 @@ h3 {
 
 /* Estilos para Formularios */
 form {
-    background-color: #f1f1f1;
+    background-color: #333;
+    color: #f1f1f1;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
+    max-width: fit-content;
     margin: 20px auto;
 }
 
@@ -88,7 +97,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #007e83;
+    background-color: #006e83;
 }
 
 /* Estilos para Listas */
@@ -98,6 +107,7 @@ ul {
 }
 
 li {
+    color: #007e83;
     background-color: #f9f9f9;
     padding: 10px;
     margin-bottom: 5px;
@@ -125,7 +135,6 @@ body {
 
 .contenedor {
     display: flex;
-    height: 100vh;
 }
 
 .fondo-cabecera {
@@ -144,9 +153,11 @@ body {
     flex: 2;
 }
 
+
+
 .seccion.derecha {
-    background-color: #F56E28; /* Color de fondo para la sección derecha */
-    color: #f9f9f9; /* Color de texto para resaltar en el fondo oscuro */
+    background-color: #F56E28; 
+    color: #f9f9f9; 
     height: 100%;
 }
 
@@ -154,10 +165,31 @@ body {
     width: 100%;
 }
 
+.seccion.izquierda img {
+    max-width: 240px; /* Ancho máximo de la imagen en la sección izquierda */
+    width: 100%;
+    height: auto;
+}
+
+.seccion.derecha img {
+    max-width: 480px; /* Ancho máximo de la imagen en la sección derecha */
+    width: 100%;
+    height: auto;
+    padding: 8px;
+}
+
 .boton {
     display: block;
     margin-top: 2px;
     position: relative;
+    background-color: #f9f9f9;
+    border: 2px solid #f9f9f9;
+    color: #F56E28;
+}
+
+.boton:hover {
+    background-color: #F56E28;
+    color: #f1f1f1;
 }
 
 /* Estilos para el botón con Pulsación */
@@ -176,4 +208,32 @@ body {
     100% {
         transform: scale(1);
     }
+}
+
+/* Estilos para la barra de navegación horizontal */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #014548;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+    
+    padding: 0px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #007e83;
+    font-weight: bold;
+    font-size: 16px;
 }

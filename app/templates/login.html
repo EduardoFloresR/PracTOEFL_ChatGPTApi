@@ -1,0 +1,40 @@
+<!-- templates/signup.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Log in</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles_logsign.css') }}">
+</head>
+<body>
+    <div class="cabecera">
+        <div class="fondo-cabecera">
+            <h1>Welcome to Prac-<span>TOEFL®</span>!</h1>
+            <h2>The best online tutor to prepare your TOEFL® certification</h2>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div class="seccion izquierda">
+            <div class="seccion-contenido">
+                <h3>Please enter your account information</h3>
+                <form action="{{ url_for('main.submit_login_form') }}" method="post">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+
+                    <input type="submit" value="Verify">
+                </form>
+            </div>
+        </div>
+
+        <div class="seccion derecha">
+            <h2></h2>
+            <h3>Are you having trouble logging in? Send an email to our support practoefl@gmail.com</h3>
+            <img src="{{ url_for('static', filename='images/support.jpg') }}" alt="support_img">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!-- templates/signup.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles_logsign.css') }}">
+    <script src="{{ url_for('static', filename='js/script_signup.js') }}"></script>
+</head>
+<body>
+    <div class="cabecera">
+        <div class="fondo-cabecera">
+            <h1>Welcome to Prac-<span>TOEFL®</span>!</h1>
+            <h2>The best online tutor to prepare your TOEFL® certification</h2>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div class="seccion izquierda">
+            <div class="seccion-contenido">
+                <h3>Please enter your information</h3>
+                <form onsubmit="return validateForm()" action="{{ url_for('main.submit_signup_form') }}" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="lastname">Lastname:</label>
+                    <input type="text" id="lastname" name="lastname">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+
+        <div class="seccion derecha">
+            <h2>By registering you will be able to access:</h2>
+            <h3>1. Personalized essay review</h3>
+            <h3>2. Feedback on your writing</h3>
+            <h3>3. Statistics of your previous exercises</h3>
+            <h3>4. Tips on how to improve</h3>
+        </div>
+    </div>
+</body>
+</html>

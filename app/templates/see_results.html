@@ -1,0 +1,32 @@
+<!-- templates/register.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}Results{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+{% endblock %}
+
+{% block content %}
+    <div class="seccion izquierda">
+        <div class="seccion-contenido">
+            <h1>All time results:</h1>
+            <ul>
+                <!-- Jinja2 -->
+                {% for resultado in resultados %}
+                <li>{{resultado.gradeContent}} - {{resultado.gradeOrganization}} - {{resultado.gradeLanguage}} - {{resultado.gradeGrammar}}</li>
+                {% endfor %}
+            </ul>
+            <a href="{{ url_for('main.index') }}" class="boton" >Home</a>
+        </div>
+    </div>
+
+    <div class="seccion derecha">
+        <h2>By registering you will be able to access:</h2>
+        <h3>1. Personalized essay review</h3>
+        <h3>2. Feedback on your writing</h3>
+        <h3>3. Statistics of your previous exercises</h3>
+        <h3>4. Tips on how to improve</h3>
+    </div>
+{% endblock %}

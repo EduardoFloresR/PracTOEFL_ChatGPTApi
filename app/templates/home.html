@@ -1,0 +1,23 @@
+<!-- templates/home.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}Prac-TOEFL® - Home{% endblock %}
+
+{% block content %}
+    <div class="seccion izquierda">
+        <h3>Welcome english learner! Are you ready to write? Click the "Writing" button.</h3>
+        <h4>If this is your first time visiting us, please read the following instructions beforehand.</h4>
+        <h4>In the writing section of TOEFL® IBT you will be required to write a short essay. Although it is recommended that the length be 300 words, responses of between 50 and 600 words are accepted.</h4>
+        <h4>For this exercise you will receive a suggestion of a topic on which to write the short essay. If you don't like the suggested topic, press the "Change topic" button in the right section of the window to receive a different one.</h4>
+        <h4>Type your answer into the text box in the left section of the window. Once you finish typing, press the "Check" button at the bottom of the text box to review your text.</h4>
+        
+    </div>
+
+    <div class="seccion derecha">
+        <h2>Do you want to know more about the TOEFL IBT exam?</h2>
+        <a href="https://toefltest.mx/" class="boton" target="_blank">Visit TOEFL Test</a>
+        <img src="{{ url_for('static', filename='images/test_img.jpg') }}" alt="test_img">
+    </div>
+    
+{% endblock %}

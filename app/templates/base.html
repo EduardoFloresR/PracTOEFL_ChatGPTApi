@@ -1,0 +1,32 @@
+<!-- templates/base.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Prac-TOEFL®{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+    <div class="cabecera">
+        <div class="fondo-cabecera">
+            <h1>Prac-<span>TOEFL®</span>!</h1>
+            <h2>The best online tutor to prepare your TOEFL® certification</h2>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('main.home') }}" class="boton">Home</a></li>
+            <li><a href="{{ url_for('main.writing') }}" class="boton">Writing</a></li>
+            <li><a href="{{ url_for('main.my_profile') }}" class="boton">My profile</a></li>
+            <li><a href="{{ url_for('main.about_us') }}" class="boton">About us</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenedor">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
+

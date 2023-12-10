@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Prac-TOEFL®</title>
-    <link rel="stylesheet" href="{{ url_for('static',filename='css/estilos.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/styles_index.css') }}">
 </head>
 <body>
     <div class="cabecera">
@@ -17,23 +17,19 @@
             <div class="seccion-contenido">
                 <h3>START WRITING NOW</h3>
                 <p>Learn to synthesize information and write structured essays.</p>
-                <img src="https://images.unsplash.com/photo-1522881451255-f59ad836fdfb?q=80&w=1944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Writing">
-                <button class="boton pulse" id="writingBtn">Writing</button>
-                <script src="{{ url_for('static',filename='js/script.js') }}"></script>
-            </div>
-
-            <div class="seccion-contenido">
-                <h3>PRACTICE YOUR READING</h3>
-                <p>Improve your comprehension and vocabulary skills with specialized tests.</p>
-                <img src="https://images.unsplash.com/photo-1491309055486-24ae511c15c7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Reading">
-                <button class="boton pulse" id="readingBtn">Reading</button>
-                <script src="{{ url_for('static',filename='js/script.js') }}"></script>
+                <img src="{{ url_for('static', filename='images/writing.jpg') }}" alt="writing_img">
             </div>
         </div>
 
         <div class="seccion derecha">
-            <h3>Be part of our community</h3>
-            <img src="https://images.unsplash.com/photo-1535483102974-fa1e64d0ca86?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Imagen Derecha">
+            <h3> </h3>
+            <h3> </h3>
+            <h3>Log in to access all utilities</h3>
+            <button class="boton pulse" id="loginBtn">Log in</button>
+            <script src="{{ url_for('static',filename='js/script.js') }}"></script>
+
+            <h3>You do not have an account? Create one now</h3>
+            <button class="boton pulse" id="signupBtn">Sign up</button>
         </div>
     </div>
 </body>
