@@ -18,3 +18,4 @@ class Profile(db.Model):
     lastname = db.Column(db.String(100))
     email = db.Column(db.String(100))
     password = db.Column(db.String(100))
+    salt = db.Column(db.String(100))

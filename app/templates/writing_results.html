@@ -12,13 +12,11 @@
 
 {% block content %}
     <div class="seccion izquierda">
-        <form action="{{ url_for('main.go_index') }}" method="post">
+        <form action="{{ url_for('main.home') }}">
             <label for="user_input">Here are your results:</label>
-            <!-- Ajustar el tamaño para aproximadamente 300 palabras -->
             <textarea id="resultsTextarea" rows="20" cols="100" readonly>{{ results }}</textarea><br>
-            <input type="submit" value="Return">
         </form>
-        <button class="boton" id="resultsBtn">See global ranking</button>
+        <button class="boton" id="rankingBtn">See your ranking</button>
         <script src="{{ url_for('static',filename='js/script_seeResults.js') }}"></script>
     </div>
 

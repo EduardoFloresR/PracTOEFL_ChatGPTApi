@@ -6,12 +6,50 @@
 
 {% block content %}
     <div class="seccion izquierda">
-        <h3>Welcome, {{ user_name }}!</h3>
+        <div class="seccion-contenido">
+            <h3>Welcome, {{ user_name }}!</h3>
+            <h3>Here is a summary of your results</h3>
+            {% if user_results %}
+                <h4>Average Grades:</h4>
+                <ul>
+                    <li>Grade Content and Relevance: {{ avg_grade_content }}</li>
+                    <li>Grade Organization and Structure: {{ avg_grade_organization }}</li>
+                    <li>Grade Language Use and Vocabulary: {{ avg_grade_language }}</li>
+                    <li>Grade Grammar and Mechanics: {{ avg_grade_grammar }}</li>
+                </ul>
+                <h4>Highest Grades:</h4>
+                <ul>
+                    <li>Grade Content and Relevance: {{ user_results|map(attribute='gradeContent')|max }}</li>
+                    <li>Grade Organization and Structure: {{ user_results|map(attribute='gradeOrganization')|max }}</li>
+                    <li>Grade Language Use and Vocabulary: {{ user_results|map(attribute='gradeLanguage')|max }}</li>
+                    <li>Grade Grammar and Mechanics: {{ user_results|map(attribute='gradeGrammar')|max }}</li>
+                </ul>
+                <h4>Your results:</h4>
+                <div class="plot-row">
+                    <div class="plot-column">{{ fig_content|safe }}</div>
+                    <div class="plot-column">{{ fig_organization|safe }}</div>
+                </div>
+                <div class="plot-row">
+                    <div class="plot-column">{{ fig_language|safe }}</div>
+                    <div class="plot-column">{{ fig_grammar|safe }}</div>
+                </div>
+            {% else %}
+                <p>No results available.</p>
+                <p>Please try writing first.</p>
+            {% endif %}
+        </div>
     </div>
 
     <div class="seccion derecha">
-        <h2>Do you want to know more about the TOEFL IBT exam?</h2>
-        <a href="https://toefltest.mx/" class="boton" target="_blank">Visit TOEFL Test</a>
-        <img src="{{ url_for('static', filename='images/test_img.jpg') }}" alt="test_img">
+        {% if user_results %}
+            <h3>Your average grades indicate that you belong to the group: {{ user_cluster }}</h3>
+            <div id="plot_clusters">{{ fig_clusters|safe }}</div>
+            <p>Group 2: You're doing good! Keep practicing.</p>
+            <p>Group 1: Review the organization and strcuture.</p>
+            <p>Group 0: Need to practice use of language.</p>
+        {% else %}
+            <p> </p>
+        {% endif %}
+        <a href="{{ url_for('main.index') }}" class="boton" >Log out</a>
     </div>
 {% endblock %}
