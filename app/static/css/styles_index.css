@@ -1,6 +1,7 @@
-/* Estilos Generales */
-/* palette https://coolors.co/palette/264653-2a9d8f-e9c46a-f4a261-e76f51*/
+/* Estilos index */
+/* Paleta de colores: https://coolors.co/palette/264653-2a9d8f-e9c46a-f4a261-e76f51 */
 
+/* Configuración general del cuerpo del documento */
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #f1f1f1;
@@ -13,43 +14,39 @@ body {
     text-align: center;
 }
 
+/* Estilos para encabezados de nivel 1 (H1) */
 h1 {
     color: #f1f1f1;
     font-family: 'Open Sans', monospace;
 }
 
+/* Estilos para porciones de texto dentro de H1 */
 h1 span {
-    color: #F56E28; /* Color de TOEFL */
+    color: #F56E28; /* Color asociado a TOEFL */
 }
 
+/* Estilos para encabezados de nivel 2 (H2) */
 h2 {
     color: #f1f1f1;
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Estilos para encabezados de nivel 3 (H3) */
 h3 {
     text-align: center;
 }
 
-/* Estilos para los Botones */
+/* Estilos para los botones */
 .boton {
     width: 240px; 
     display: block;
     margin: 10px auto 20px; /* Margen superior e inferior, centrado horizontalmente */
     padding: 10px 15px;
     text-decoration: none;
-    border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    background-color: transparent;
-    border: 2px solid #007e83;
-    color: #007e83;
     transition: background-color 0.3s, color 0.3s;
-}
-
-.boton {
-    display: block;
     margin-top: 2px;
     position: relative;
     background-color: #f9f9f9;
@@ -57,63 +54,67 @@ h3 {
     color: #F56E28;
 }
 
+/* Efecto de cambio de color al pasar el mouse sobre el botón */
 .boton:hover {
     background-color: #F56E28;
     color: #f1f1f1;
 }
 
-
-
+/* Estilos para imágenes */
 img {
     max-width: 480px;
     height: auto;
 }
 
-.contenedor {
-    text-align: center;
-}
-
-.seccion {
-    margin-bottom: 30px;
-}
-
-.contenedor {
-    display: flex;
-    height: 50vh;
-}
-
-.fondo-cabecera {
-    background-color: #007e83;
-    padding: 20px;
-}
-
+/* Estilos para secciones */
 .seccion {
     flex: 1;
     text-align: center;
     padding: 8px;
     position: relative;
+    margin-bottom: 30px;
 }
 
+/* Configuración del contenedor principal */
+.contenedor {
+    display: flex;
+    height: 50vh;
+    text-align: center;
+}
+
+/* Estilos para la sección de cabecera */
+.fondo-cabecera {
+    background-color: #007e83;
+    padding: 20px;
+}
+
+/* Configuración de las secciones (izquierda y derecha) */
+
+/* Configuración de la sección izquierda */
 .seccion.izquierda {
     flex: 2;
 }
 
+/* Estilos para encabezados de nivel 3 (H3) en la sección izquierda */
 h3 {
     color: #333;
     text-align: center;
 }
 
+/* Estilos para encabezados de nivel 4 (H4) */
 h4 {
     text-align: left;
     color: #333;
 }
 
+/* Configuración de la sección derecha */
 .seccion.derecha {
-    background-color: #F56E28; 
-    color: #f9f9f9; 
+    background-color: #F56E28; /* Color de fondo para la sección derecha */
+    color: #f9f9f9; /* Color de texto para la sección derecha */
     height: 100%;
 }
 
+/* Estilos para imágenes dentro de las secciones */
 .seccion img {
     width: 100%;
 }

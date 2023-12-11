@@ -4,11 +4,13 @@ form {
     margin: 0 auto;
 }
 
+/* Estilos para etiquetas de formulario */
 label {
     display: block;
     margin-bottom: 8px;
 }
 
+/* Estilos generales para campos de entrada de formulario */
 input {
     width: 100%;
     padding: 8px;
@@ -16,16 +18,19 @@ input {
     box-sizing: border-box;
 }
 
+/* Estilos para el botón de envío del formulario */
 input[type="submit"] {
     background-color: #007e83;
     color: #f1f1f1;
     cursor: pointer;
 }
 
+/* Efecto de cambio de color al pasar el mouse sobre el botón de envío */
 input[type="submit"]:hover {
     background-color: #006e83;
 }
 
+/* Configuración general del cuerpo del documento */
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #f1f1f1;
@@ -38,69 +43,81 @@ body {
     text-align: center;
 }
 
+/* Estilos para encabezados de nivel 1 (H1) */
 h1 {
     color: #f1f1f1;
     font-family: 'Open Sans', monospace;
 }
 
+/* Estilos para porciones de texto dentro de H1 */
 h1 span {
-    color: #F56E28; /* Color de TOEFL */
+    color: #F56E28; /* Color asociado a TOEFL */
 }
 
+/* Estilos para encabezados de nivel 2 (H2) */
 h2 {
     color: #f1f1f1;
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Estilos para encabezados de nivel 3 (H3) */
 h3 {
     text-align: center;
 }
 
+/* Estilos para imágenes */
 img {
     max-width: 480px;
     height: auto;
 }
 
-/* Estilos específicos para la estructura de la página */
+/* Configuración específica para la estructura de la página */
 body {
     margin: 0;
     padding: 0;
 }
 
+/* Configuración del contenedor principal */
 .contenedor {
     display: flex;
     justify-content: center;
-    align-items: center;
     text-align: center;
+    height: 50vh;
 }
 
+/* Estilos para la sección de cabecera */
 .fondo-cabecera {
     background-color: #007e83;
     padding: 20px;
 }
 
+/* Configuración de las secciones (izquierda y derecha) */
 .seccion {
     flex: 1;
     text-align: center;
     padding: 8px;
     position: relative;
+    margin-bottom: 30px;
 }
 
+/* Configuración de la sección izquierda */
 .seccion.izquierda {
     flex: 2;
 }
 
+/* Estilos para la sección derecha */
 .seccion.derecha {
     background-color: #F56E28; /* Color de fondo para la sección derecha */
     color: #f9f9f9; /* Color de texto para resaltar en el fondo oscuro */
     height: 100%;
 }
 
+/* Estilos para imágenes dentro de las secciones */
 .seccion img {
     width: 100%;
 }
 
-/* Estilos para los Botones */
+/* Estilos para los botones */
 .boton {
     width: 240px; 
     display: block;
@@ -119,6 +136,7 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* Efecto de cambio de color al pasar el mouse sobre el botón */
 .boton:hover {
     background-color: #F56E28;
     color: #f1f1f1;

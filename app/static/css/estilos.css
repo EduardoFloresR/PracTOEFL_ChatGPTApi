@@ -1,6 +1,7 @@
 /* Estilos Generales */
-/* palette https://coolors.co/palette/264653-2a9d8f-e9c46a-f4a261-e76f51*/
+/* Paleta de colores: https://coolors.co/palette/264653-2a9d8f-e9c46a-f4a261-e76f51 */
 
+/* Configuración general del cuerpo del documento */
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #f1f1f1;
@@ -11,26 +12,31 @@ body {
     text-align: center;
 }
 
+/* Estilos para encabezados de nivel 1 (H1) */
 h1 {
     color: #f1f1f1;
     font-family: 'Open Sans', monospace;
 }
 
+/* Estilos para porciones de texto dentro de H1 */
 h1 span {
-    color: #F56E28; /* Color de TOEFL */
+    color: #F56E28; /* Color asociado a TOEFL */
 }
 
+/* Estilos para encabezados de nivel 2 (H2) */
 h2 {
     color: #f1f1f1;
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Estilos para encabezados de nivel 3 (H3) */
 h3 {
     text-align: center;
     color: #333;
     text-align: center;
 }
 
+/* Estilos para encabezados de nivel 4 (H4) */
 h4 {
     text-align: left;
     color: #333;
@@ -38,7 +44,7 @@ h4 {
     margin-right: 2%;
 }
 
-/* Estilos para los Botones */
+/* Estilos para los botones */
 .boton {
     width: fit-content; 
     display: block;
@@ -55,12 +61,13 @@ h4 {
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* Efecto de cambio de color al pasar el mouse sobre el botón */
 .boton:hover {
     background-color: #2A9D8F;
     color: #f1f1f1;
 }
 
-/* Estilos para Formularios */
+/* Estilos para formularios */
 form {
     background-color: #333;
     color: #f1f1f1;
@@ -77,6 +84,7 @@ label {
     font-weight: bold;
 }
 
+/* Estilos para tipos de entrada en formularios */
 input[type="text"],
 input[type="email"],
 input[type="submit"] {
@@ -89,6 +97,7 @@ input[type="submit"] {
     box-sizing: border-box;
 }
 
+/* Estilos para el botón de envío en formularios */
 input[type="submit"] {
     background-color: #007e83;
     color: #f1f1f1;
@@ -96,16 +105,18 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+/* Efecto de cambio de color al pasar el mouse sobre el botón de envío */
 input[type="submit"]:hover {
     background-color: #006e83;
 }
 
-/* Estilos para Listas */
+/* Estilos para listas no ordenadas */
 ul {
     list-style: none;
     padding: 0;
 }
 
+/* Estilos para elementos de lista */
 li {
     color: #007e83;
     background-color: #f9f9f9;
@@ -114,15 +125,18 @@ li {
     border-radius: 5px;
 }
 
+/* Estilos para imágenes */
 img {
     max-width: 480px;
     height: auto;
 }
 
+/* Contenedor con alineación central */
 .contenedor {
     text-align: center;
 }
 
+/* Estilos para secciones */
 .seccion {
     margin-bottom: 30px;
 }
@@ -133,15 +147,18 @@ body {
     padding: 0;
 }
 
+/* Configuración del contenedor principal */
 .contenedor {
     display: flex;
 }
 
+/* Estilos para la sección de cabecera */
 .fondo-cabecera {
     background-color: #007e83;
     padding: 20px;
 }
 
+/* Configuración de las secciones (izquierda y derecha) */
 .seccion {
     flex: 1;
     text-align: center;
@@ -149,28 +166,31 @@ body {
     position: relative;
 }
 
+/* Configuración de la sección izquierda */
 .seccion.izquierda {
     flex: 2;
 }
 
-
-
+/* Configuración de la sección derecha */
 .seccion.derecha {
-    background-color: #F56E28; 
-    color: #f9f9f9; 
+    background-color: #F56E28; /* Color de fondo para la sección derecha */
+    color: #f9f9f9; /* Color de texto para la sección derecha */
     height: 100%;
 }
 
+/* Estilos para imágenes dentro de las secciones */
 .seccion img {
     width: 100%;
 }
 
+/* Estilos para la imagen en la sección izquierda */
 .seccion.izquierda img {
     max-width: 240px; /* Ancho máximo de la imagen en la sección izquierda */
     width: 100%;
     height: auto;
 }
 
+/* Estilos para la imagen en la sección derecha */
 .seccion.derecha img {
     max-width: 480px; /* Ancho máximo de la imagen en la sección derecha */
     width: 100%;
@@ -178,6 +198,7 @@ body {
     padding: 8px;
 }
 
+/* Estilos para el botón */
 .boton {
     display: block;
     margin-top: 2px;
@@ -187,6 +208,7 @@ body {
     color: #F56E28;
 }
 
+/* Efecto de cambio de color al pasar el mouse sobre el botón */
 .boton:hover {
     background-color: #F56E28;
     color: #f1f1f1;
@@ -218,19 +240,21 @@ nav {
     padding: 10px 0;
 }
 
+/* Configuración de la lista de la barra de navegación */
 nav ul {
     display: flex;
     margin: 0;
 }
 
+/* Configuración de los elementos de la lista de la barra de navegación */
 nav ul li {
     margin-right: 20px;
-    
     padding: 0px;
     margin-bottom: 0px;
     border-radius: 0px;
 }
 
+/* Estilos para los enlaces de la barra de navegación */
 nav a {
     text-decoration: none;
     color: #007e83;
