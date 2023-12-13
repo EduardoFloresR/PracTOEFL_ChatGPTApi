@@ -50,6 +50,7 @@ pip install -r requirements.txt
 ### 4. Configurar API de ChatGPT
 
 Obtén una clave API de ChatGPT (token) registrándote y pagando en [openai](https://platform.openai.com/account/billing/overview). Asegúrate de no subir tu clave API a tu repositorio.
+Coloca tu clave en la línea 13 del archivo app\routes.py, sustituyendo la cadena INSERT_YOUR_OPENAI_API_KEY_HERE para asignarle ese valor a la variable openai.api_key
 
 ### 5. Ejecutar la Aplicación
 
